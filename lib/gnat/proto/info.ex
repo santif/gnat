@@ -2,7 +2,8 @@ defmodule Gnat.Proto.Info do
   @moduledoc false
   defstruct [
     :server_id, :version, :go, :host, :port, :auth_required,
-    :ssl_required, :tls_required, :tls_verify, :max_payload
+    :ssl_required, :tls_required, :tls_verify, :max_payload,
+    :client_id, :git_commit, :proto
   ]
 
   def parse(message) do
